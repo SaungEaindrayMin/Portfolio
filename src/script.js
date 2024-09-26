@@ -87,3 +87,47 @@ gsap.utils.toArray('#skills').forEach(skill => {
   })
 })
 
+gsap.utils.toArray('.info').forEach(info => {
+  gsap.fromTo(info,{
+      opacity:0,
+      y:200,
+      skewY:0,
+  },{
+      opacity:1,
+      y:0,
+      duration:1,
+      delay:.4,
+      skewY:0,
+      scrollTrigger:info
+  })
+})
+
+gsap.utils.toArray('.aboutme').forEach(me => {
+  gsap.fromTo(me,{
+      opacity:0,
+      y:200,
+      skewY:0,
+  },{
+      opacity:1,
+      y:0,
+      duration:1,
+      delay:.4,
+      skewY:0,
+      scrollTrigger:me
+  })
+})
+
+gsap.utils.toArray('.education').forEach(edu => {
+  gsap.fromTo(edu,{
+      opacity:0,
+      y:200,
+      skewY:0,
+  },{
+      opacity:1,
+      y:0,
+      duration:1,
+      delay:.4,
+      skewY:0,
+      scrollTrigger:edu
+  })
+})

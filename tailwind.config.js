@@ -7,10 +7,20 @@ module.exports = {
       fontFamily:{
         anton:["Anton", "sans-serif"],
       }
+      
     },
   },
   plugins: [
-    require('daisyui'),
+    require('daisyui','tailwindcss-animated'),
   ],
+
+  daisyui: {
+    themes: [
+      "light",
+      "luxury",
+      "coffee",
+      "black",
+    ],
+  },
 }
 
